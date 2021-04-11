@@ -9,7 +9,9 @@ class BarChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Text('\$${spent.toStringAsFixed(0)}'),
+      Container(
+          height: 20,
+          child: FittedBox(child: Text('\$${spent.toStringAsFixed(0)}'))),
       SizedBox(
         height: 4,
       ),
