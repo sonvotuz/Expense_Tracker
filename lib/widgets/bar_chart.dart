@@ -4,10 +4,13 @@ class BarChart extends StatelessWidget {
   final String label;
   final double spent;
   final double spentPercentageOfTotal;
-  BarChart(this.label, this.spent, this.spentPercentageOfTotal);
+
+  const BarChart(this.label, this.spent, this.spentPercentageOfTotal);
 
   @override
   Widget build(BuildContext context) {
+    print('build barChart');
+
     return LayoutBuilder(
       builder: (context, constraints) {
         return Column(children: [
